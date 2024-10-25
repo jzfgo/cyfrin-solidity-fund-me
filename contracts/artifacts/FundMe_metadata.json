@@ -6,18 +6,26 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "funder",
-						"type": "address"
-					}
-				],
-				"name": "addressToAmountFunded",
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "FundMe__NotOwner",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "MINIMUM_USD",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "amountFunded",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -34,17 +42,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "funders",
-				"outputs": [
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"name": "s_addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -52,16 +60,14 @@
 			},
 			{
 				"inputs": [],
-				"name": "minimumUsd",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -100,11 +106,11 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x95a550b6bd309a8123239d3338f94ec54895515ddc4a2d02e618645f01255a25",
+			"keccak256": "0x31bbc34c14cf62c877d7f55470b62d0d19158f714f4d4be5a2b10e27671f058a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d55f5043d18df1ed8be0329d0affe1ceafc2f454b72d8e91aa22a9be4a902a80",
-				"dweb:/ipfs/QmXBAfDLwfaYqD7ezL9YM9yxhUsHow2SCgWpMdqfSEpTFK"
+				"bzz-raw://729a8737331b5e1c77b65a53c57f954cd184ce7d76c1ec0e0c4a2cc85fd11b99",
+				"dweb:/ipfs/QmcxmXht12T6htVmQqKreArfvF1JYfhoH2kFVkQRywM571"
 			]
 		},
 		"contracts/PriceConverter.sol": {
